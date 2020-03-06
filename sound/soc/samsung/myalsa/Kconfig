@@ -1,0 +1,19 @@
+# myalsa driver for jz2440
+
+
+config SND_SOC_SAMSUNG_MYALSA_S3C2440_EN
+        tristate "Enable snd_soc_samsung_myalsa_s3c2440 Module"
+	depends on SND_SOC_SAMSUNG && ARCH_S3C24XX && SND_SOC_SAMSUNG_S3C2440_WM8976
+	select SND_SOC_SAMSUNG_MYALSA_S3C2440_I2S
+	select SND_SOC_SAMSUNG_MYALSA_S3C2440_DMA
+	select SND_SOC_SAMSUNG_MYALSA_S3C2440_JZ2440
+
+
+config SND_SOC_SAMSUNG_MYALSA_S3C2440_I2S
+        tristate
+
+config SND_SOC_SAMSUNG_MYALSA_S3C2440_DMA
+        tristate
+
+config SND_SOC_SAMSUNG_MYALSA_S3C2440_JZ2440
+        tristate

@@ -1,0 +1,3 @@
+snd-soc-s3c2440-jz2440-wm8976-objs := jz2440-wm8976.o
+
+obj-$(CONFIG_SND_SOC_SAMSUNG_MYALSA_S3C2440_JZ2440) += snd-soc-s3c2440-jz2440-wm8976.o
